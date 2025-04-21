@@ -6,7 +6,7 @@
 /*   By: nmagro-r <nmagro-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 15:36:57 by nmagro-r          #+#    #+#             */
-/*   Updated: 2024/10/10 15:28:10 by nmagro-r         ###   ########.fr       */
+/*   Updated: 2025/04/21 15:07:50 by nmagro-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	if (s == NULL)
+		return (NULL);
 	while (*s != '\0')
 	{
 		if (*s == (char)c)
